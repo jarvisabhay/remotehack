@@ -70,5 +70,20 @@ void chooseWinner(char uChoice, char cChoice) {
 }
 
 int main() {
+    //User's choice
+    char uChoice; 
+    //Compter's choice
+    char cChoice;
     
+    uChoice = getUserOption();
+    cout << "Your choice is: "<< endl;
+    showSelectedOption(uChoice);
+    
+    cout << "Computer's choice is: "<< endl;
+    cChoice = getComputerOption();
+    showSelectedOption(cChoice);
+    
+    chooseWinner(uChoice, cChoice);
+
+    return 0;
 }
